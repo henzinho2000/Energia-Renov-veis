@@ -1,0 +1,43 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: 4s mexendo infinite;
+    .footer{
+        background-color: $color5;
+        color: $color0;
+        border-radius: 25px;
+        padding: 2%;
+        display: flex;
+        justify-content:space-around;
+        .esquerda{
+            display: flex;
+            width: 40%;
+            margin-left: 2dvw;
+            justify-content:space-between;
+            align-items: center;
+            a{
+                color: $color0;
+                text-decoration: none;
+                font-size: 70%;
+            }
+            img{
+                height: 15dvw;
+                border-radius: 2dvw;
+            }
+        }
+        .center{
+            width: 1dvw;
+            border-radius: 5px;
+            background-color: $color0;
+        }
+        .direita{
+            width: 40%;
+            p{
+                font-size: 68%;
+                font-family: $font-family2;
+                text-align: justify;
+            }
+        }
+    }
+}

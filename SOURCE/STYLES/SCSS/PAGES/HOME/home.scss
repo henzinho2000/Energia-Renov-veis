@@ -1,0 +1,33 @@
+.top{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    h1{
+        position: relative;
+        margin:  -60dvw 0 0 -95dvw;
+        font-weight: 800;
+        color: $color6;
+        font-size: 13dvw;
+    }
+    img{
+        width: 100dvw;
+        height: 100dvh;
+    }
+}
+.middle{
+    margin-top: 100vh;
+    background-color: $color6;
+    border-radius: 10vw 10vw 0 0;
+    backdrop-filter: blur(1vw);
+    img{
+        border-radius: 30px;
+        width: 100%;
+    }
+}
+
+.text{
+
+    padding: 4vw 7vw;
+}

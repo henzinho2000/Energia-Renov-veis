@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    top: 2dvw;
+    animation: 6s mexendo infinite;
+    position: absolute;
+    top: 5vw;
+    z-index: 2;
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 12vh;
+        width: 95%;
+        background-color: $color6;
+        border-radius: 25px;
+        backdrop-filter:blur(1dvw);
+        img{
+            width: 5vh;
+            transition: .5s all cubic-bezier(0.19, 1, 0.22, 1);
+            &:hover{
+                transform: translateY(-1vh);
+            }
+            &:active{
+               scale: 1.15;
+            }
+        }
+    }
+}
+
+@keyframes mexendo{
+    0%{
+        transform: translateY(0dvw);
+    }50%{
+        transform: translateY(.5dvw);
+    }
+    100%{
+        transform: translateY(0dvw);
+    }
+}
