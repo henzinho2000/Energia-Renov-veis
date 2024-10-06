@@ -30,18 +30,18 @@ header .nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 12vh;
+  height: 12dvh;
   width: 95%;
   background-color: rgba(14, 11, 41, 0.9450980392);
   border-radius: 25px;
   backdrop-filter: blur(1dvw);
 }
 header .nav img {
-  width: 5vh;
+  width: 5dvh;
   transition: 0.5s all cubic-bezier(0.19, 1, 0.22, 1);
 }
 header .nav img:hover {
-  transform: translateY(-1vh);
+  transform: translateY(-1dvh);
 }
 header .nav img:active {
   scale: 1.15;
@@ -151,7 +151,7 @@ footer .footer .direita p {
 }
 
 .middle {
-  margin-top: 100vh;
+  margin-top: 100dvh;
   background-color: rgba(14, 11, 41, 0.9450980392);
   border-radius: 10vw 10vw 0 0;
   backdrop-filter: blur(1vw);
