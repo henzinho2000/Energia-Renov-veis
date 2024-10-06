@@ -1,29 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Nunito";
-}
-
-html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
-
-.container {
-  scroll-snap-align: end;
-  color: #fffeef;
-  text-align: justify;
-}
-
 header {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: center;
-  top: 2dvw;
+  top: 15px;
   animation: 6s mexendo infinite;
   position: absolute;
-  top: 5vw;
   z-index: 2;
 }
 header .nav {
@@ -32,7 +14,7 @@ header .nav {
   justify-content: space-evenly;
   height: 12dvh;
   width: 95%;
-  background-color: rgba(14, 11, 41, 0.9450980392);
+  background-color: rgba(14, 11, 41, 0.8901960784);
   border-radius: 25px;
   backdrop-filter: blur(1dvw);
 }
@@ -53,27 +35,29 @@ header .nav img:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1vw;
+  padding: 2vh;
   position: fixed;
   right: 2vw;
-  top: 10vw;
+  top: 10vh;
   z-index: 3;
   opacity: 0;
   animation: 0.5s aparecer forwards;
   animation-timeline: scroll();
-  animation-range: entry 20% cover 50%;
+  animation-range: entry 20% cover 30%;
 }
 .seta img {
   animation: 5s mexendo infinite;
-  width: 10vw;
+  width: 6vh;
 }
 
 @keyframes aparecer {
   to {
     opacity: 1;
+    display: flex;
   }
   from {
     opacity: 0;
+    display: none;
   }
 }
 @keyframes mexendo {
@@ -139,11 +123,12 @@ footer .footer .direita p {
   top: 0;
 }
 .top h1 {
-  position: relative;
-  margin: -60dvw 0 0 -95dvw;
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
   font-weight: 800;
-  color: rgba(14, 11, 41, 0.9450980392);
-  font-size: 13dvw;
+  color: rgba(14, 11, 41, 0.8901960784);
+  font-size: 8dvw;
 }
 .top img {
   width: 100dvw;
@@ -152,7 +137,7 @@ footer .footer .direita p {
 
 .middle {
   margin-top: 100dvh;
-  background-color: rgba(14, 11, 41, 0.9450980392);
+  background-color: rgba(14, 11, 41, 0.8901960784);
   border-radius: 10vw 10vw 0 0;
   backdrop-filter: blur(1vw);
 }
@@ -163,6 +148,66 @@ footer .footer .direita p {
 
 .text {
   padding: 4vw 7vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito";
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  background: #0e0b29;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fdfbb3;
+  box-shadow: 0 0 10px 10px #3b0032;
+  border-radius: 12px;
+}
+
+.container {
+  scroll-snap-align: end;
+  color: #fffeef;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 2vw;
+  }
+  .cima {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cima .que {
+    height: 100%;
+    width: 60%;
+  }
+  .cima .images {
+    width: 25vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 4.5vw;
+  }
+  .cima {
+    display: block;
+  }
+  .cima .que {
+    width: 100%;
+  }
+  .cima .images {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

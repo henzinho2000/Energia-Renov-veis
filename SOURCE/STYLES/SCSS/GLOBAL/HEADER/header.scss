@@ -3,10 +3,9 @@ header{
     align-items: center;
     width: 100%;
     justify-content: center;
-    top: 2dvw;
+    top: 15px;
     animation: 6s mexendo infinite;
     position: absolute;
-    top: 5vw;
     z-index: 2;
     .nav{
         display: flex;
@@ -36,26 +35,28 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1vw;
+    padding: 2vh;
     position: fixed;
     right: 2vw;
-    top: 10vw;
+    top: 10vh;
     z-index: 3;
     opacity: 0;
     animation: 0.5s aparecer forwards;
 	animation-timeline: scroll();
-    animation-range: entry 20% cover 50%;
+    animation-range: entry 20% cover 30%;
     img{
         animation:  5s mexendo infinite;
-        width: 10vw;
+        width: 6vh;
     }
 }
 
 @keyframes aparecer {
     to{
         opacity: 1;
+        display: flex;
     }from{
         opacity: 0;
+        display: none;
     }
 }
 

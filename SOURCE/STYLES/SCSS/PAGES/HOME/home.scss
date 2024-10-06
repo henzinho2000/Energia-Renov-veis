@@ -5,11 +5,12 @@
     z-index: -1;
     top: 0;
     h1{
-        position: relative;
-        margin:  -60dvw 0 0 -95dvw;
+        position: absolute;
+        top: 30vh;
+        left: 10vw;
         font-weight: 800;
         color: $color6;
-        font-size: 13dvw;
+        font-size: 8dvw;
     }
     img{
         width: 100dvw;
