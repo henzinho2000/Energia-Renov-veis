@@ -3,7 +3,7 @@ function updateImageBasedOnWindowSize(caminho,caminho2,caminho3,caminho4) {
 
     var top = document.querySelector("#aba");
 
-    if (windowWidth <= 336) {
+    if (windowWidth <= 386) {
         top.src = caminho;
     }else if(windowWidth <= 500){
         top.src = caminho2;
