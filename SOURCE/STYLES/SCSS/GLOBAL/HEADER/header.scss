@@ -15,7 +15,7 @@ header{
         width: 95%;
         background-color: $color6;
         border-radius: 25px;
-        backdrop-filter:blur(1dvw);
+        backdrop-filter: blur(.25vw);
         img{
             width: 5dvh;
             transition: .5s all cubic-bezier(0.19, 1, 0.22, 1);

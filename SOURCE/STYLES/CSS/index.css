@@ -16,7 +16,7 @@ header .nav {
   width: 95%;
   background-color: rgba(14, 11, 41, 0.8901960784);
   border-radius: 25px;
-  backdrop-filter: blur(1dvw);
+  backdrop-filter: blur(0.25vw);
 }
 header .nav img {
   width: 5dvh;
@@ -139,7 +139,10 @@ footer .footer .direita p {
   margin-top: 100dvh;
   background-color: rgba(14, 11, 41, 0.8901960784);
   border-radius: 10vw 10vw 0 0;
-  backdrop-filter: blur(1vw);
+  backdrop-filter: blur(0.6vw);
+}
+.middle h1 {
+  color: #fdfbb3;
 }
 .middle img {
   border-radius: 30px;
@@ -148,6 +151,10 @@ footer .footer .direita p {
 
 .text {
   padding: 4vw 7vw;
+}
+
+#sobre {
+  color: #fdfbb3;
 }
 
 * {
@@ -178,7 +185,7 @@ html {
   text-align: justify;
 }
 
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 1200px) {
   body {
     font-size: 2vw;
   }
